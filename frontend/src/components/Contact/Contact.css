@@ -1,0 +1,140 @@
+.contact__panel {
+  background-color: var(--dark);
+  border-radius: var(--radius-xl);
+  padding: 64px 56px;
+  text-align: center;
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+.contact__title {
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 800;
+  margin-top: 16px;
+  color: var(--text-on-dark);
+}
+
+.contact__desc {
+  margin: 18px auto 0;
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--text-on-dark-muted);
+  max-width: 520px;
+}
+
+.contact__form {
+  margin: 36px auto 0;
+  max-width: 560px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  text-align: left;
+}
+
+.contact__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.contact__input {
+  width: 100%;
+  padding: 14px 18px;
+  font-family: inherit;
+  font-size: 14px;
+  color: var(--text-on-dark);
+  background-color: var(--dark-card);
+  border: 1px solid var(--border-dark);
+  border-radius: var(--radius-sm);
+  outline: none;
+  transition: border-color 0.25s var(--ease);
+}
+
+.contact__input::placeholder {
+  color: var(--text-on-dark-muted);
+}
+
+.contact__input:focus {
+  border-color: var(--accent);
+}
+
+.contact__textarea {
+  resize: none;
+  min-height: 120px;
+}
+
+.contact__submit {
+  align-self: center;
+  margin-top: 8px;
+  padding: 13px 36px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 999px;
+  border: none;
+  background-color: var(--accent);
+  color: var(--white);
+  transition: background-color 0.25s var(--ease), transform 0.25s var(--ease);
+}
+
+.contact__submit:hover:not(:disabled) {
+  background-color: var(--accent-hover);
+  transform: translateY(-2px);
+}
+
+.contact__submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.contact__status {
+  text-align: center;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+.contact__status--ok {
+  color: var(--accent);
+}
+
+.contact__status--err {
+  color: #f08a8a;
+}
+
+.contact__info {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  font-size: 13px;
+  color: var(--text-on-dark-muted);
+}
+
+.contact__info a:hover {
+  color: var(--accent);
+}
+
+@media (max-width: 768px) {
+  .contact__panel {
+    padding: 48px 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact__panel {
+    padding: 40px 22px;
+  }
+
+  .contact__row {
+    grid-template-columns: 1fr;
+  }
+
+  .contact__submit {
+    width: 100%;
+  }
+
+  .contact__info {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

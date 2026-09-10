@@ -1,0 +1,102 @@
+.projects__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.projects__card {
+  background-color: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 36px 32px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease), border-color 0.3s var(--ease);
+}
+
+.projects__card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--accent);
+}
+
+.projects__card--dark {
+  background-color: var(--dark);
+  border-color: var(--border-dark);
+  color: var(--text-on-dark);
+}
+
+.projects__card-top {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.projects__no {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.projects__category {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: var(--text-muted);
+}
+
+.projects__card--dark .projects__category {
+  color: var(--text-on-dark-muted);
+}
+
+.projects__title {
+  margin-top: 18px;
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.projects__card--dark .projects__title {
+  color: var(--text-on-dark);
+}
+
+.projects__desc {
+  margin-top: 14px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text-muted);
+  flex-grow: 1;
+}
+
+.projects__card--dark .projects__desc {
+  color: var(--text-on-dark-muted);
+}
+
+.projects__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.projects__tag {
+  padding: 6px 14px;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 999px;
+  background-color: var(--bg-alt);
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+}
+
+.projects__card--dark .projects__tag {
+  background-color: var(--dark-card);
+  color: var(--text-on-dark-muted);
+  border-color: var(--border-dark);
+}
+
+@media (max-width: 768px) {
+  .projects__grid { grid-template-columns: 1fr; }
+  .projects__card { padding: 28px 24px; }
+}
