@@ -1,4 +1,4 @@
-import profileImage from '../../assets/Portfolio Profile.png';
+import profileImage from '../../assets/Portfolio profile.png';
 import './Hero.css';
 
 export default function Hero() {
