@@ -254,7 +254,7 @@
 
   .hero__photo-ring {
     z-index: -1;
-    left: 30px;
+    left: 0;
     top: -30px;
   }
 }

@@ -4,7 +4,7 @@ const stats = [
   { value: '2025', label: 'Bsc Cs Graduate' },
   { value: 'Familiar with ', label: 'AI Agents' },
   { value: 'React', label: 'Frontend Focus' },
-  { value: 'MangoDb/SQL', label: 'Database Dountation' },
+  { value: 'MongoDb/SQL', label: 'Database Dountation' },
 ];
 
 export default function About() {

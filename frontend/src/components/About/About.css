@@ -126,7 +126,20 @@
   }
 
   .about__inner {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     /* gap: 48px; */
+  }
+
+  .about__stats {
+    min-width: 0;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .about__stat {
+    min-width: 0;
+  }
+
+  .about__stat-value {
+    overflow-wrap: anywhere;
   }
 }
