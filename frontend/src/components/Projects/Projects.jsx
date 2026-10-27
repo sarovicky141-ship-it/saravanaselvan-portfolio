@@ -21,8 +21,8 @@ const projects = [
   {
     no: '03',
     category: 'WEB DEVELOPMENT',
-    title: 'FOODCOOKER',
-    url: 'https://foodcooker-761fb.web.app/',
+    title: 'FLAVOURHUB',
+    url: 'https://flavourhub-64871.firebaseapp.com/',
     desc: 'A responsive startup blog website featuring a clean, readable interface, structured content layouts, and mobile-friendly design for a smooth browsing experience across devices.',
     tags: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'MongoDB', 'Vercel'],
   },
@@ -46,7 +46,7 @@ export default function Projects() {
       onPointerLeave={() => setActiveProject(0)}
     >
       <div className="container">
-        <div className="section-head reveal">
+        <div className="section-head">
           <p className="eyebrow">Selected Projects</p>
           <h2>Projects that show what I can build.</h2>
         </div>
@@ -63,7 +63,7 @@ export default function Projects() {
                 }
               }}
               key={p.title}
-              className={`projects__card projects__card-link ${activeProject === i ? 'projects__card--active' : ''} reveal reveal-delay-${i + 1}`}
+              className={`projects__card projects__card-link ${activeProject === i ? 'projects__card--active' : ''}`}
             >
               <div className="projects__card-top">
                 <span className="projects__no">{p.no}</span>

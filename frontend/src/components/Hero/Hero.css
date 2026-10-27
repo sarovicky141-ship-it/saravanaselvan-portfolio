@@ -1,5 +1,5 @@
 .hero {
-  padding: 72px 0 100px;
+  padding: 104px 0 100px;
   background-color: var(--bg);
 }
 
@@ -256,5 +256,11 @@
     z-index: -1;
     left: 0;
     top: -30px;
+  }
+}
+
+@media (max-width: 475px) {
+  .hero__photo-ring {
+    visibility: hidden;
   }
 }
